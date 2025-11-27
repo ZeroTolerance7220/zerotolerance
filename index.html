@@ -1674,8 +1674,10 @@
       document.querySelectorAll('.conf-toggle').forEach(t => t.checked = false);
       calculateScores(); // reset summary
     }
+    
+        function handleSaveTrade() {
+      alert('Save button clicked'); // TEMP TEST LINE
 
-    function handleSaveTrade() {
       const instrument = document.getElementById('instrument').value.trim();
       const direction = document.getElementById('direction').value;
       if (!instrument || !direction) {
